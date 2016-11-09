@@ -1,0 +1,22 @@
+body
+{
+  background:url('../img/background.png') repeat;
+}
+@media (min-width: 768px) {
+		#margin-off{
+			margin-right: 0;
+			margin-left: 0;
+		}
+}
+.navbar{
+	color:black !important;
+}
+.navbar-default{
+	background-color: rgba(214, 222, 226, 0.63);
+}
+.navbar-default .navbar-nav > .active > a{
+background-color: rgba(198, 224, 228, 0.63);
+}
+.navbar-default .navbar-nav > .active > a:hover{
+	background-color: rgba(38, 190, 214, 0.63);
+}
