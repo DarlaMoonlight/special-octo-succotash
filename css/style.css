@@ -8,15 +8,21 @@ body
 			margin-left: 0;
 		}
 }
-.navbar{
-	color:black !important;
-}
+
 .navbar-default{
-	background-color: rgba(214, 222, 226, 0.63);
+	background-color: rgba(214, 222, 226, 1);
 }
 .navbar-default .navbar-nav > .active > a{
-background-color: rgba(198, 224, 228, 0.63);
+background-color: rgba(198, 224, 228, 1);
+color:#02151f;
+
 }
 .navbar-default .navbar-nav > .active > a:hover{
-	background-color: rgba(38, 190, 214, 0.63);
+	background-color: rgba(38, 190, 214, 1);
+}
+.navbar-default .navbar-nav > li > a {
+	color:#02151f;
+}
+.navbar-default .navbar-brand {
+	color:#02151f;
 }
