@@ -39,7 +39,7 @@
 
                           <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#"><i id="profile">A </i>My Profile</a></li>
                                         <li role="separator" class="divider"></li>
@@ -72,7 +72,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="page-header">
-                            <h1>Мой котоблог</h1>
+                            <h1>My history</h1>
                          </div>
                     </div>
                 </div>
@@ -82,10 +82,10 @@
                             <div class="panel-body">
                                 <form action="">
                                     <div class="input-group" style="width: 100%;">
-                                        <p>Напиши, что нового ты увидел за сегодня:</p>
-                                        <input style="min-height: 70px; width: 100%;" type="text" class="form-control"
-                                             aria-label="Amount (to the nearest dollar)" placeholder="Что нового?">
-                                        <input type="button" class="btn btn-primary pull-right" value="Опубликовать" style="margin: 15px 0 0 0;">
+                                        <p id="disp" style="display: none;">Write what's new with you:</p>
+                                        <input style="min-height: 70px; width: 100%;" type="text" id="bl" class="form-control"
+                                             aria-label="Amount (to the nearest dollar)" placeholder="What is new?">
+                                        <input type="button" id="displ" class="btn btn-primary pull-right" value="Send" style="margin: 15px 0 0 0; display: none; ">
                                     </div>
                                 </form>
                             </div>
@@ -98,7 +98,7 @@
             <div class="col-xs-12 col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                                 <!-- Default panel contents -->
-                    <div class="panel-heading">Недавние записи</div>
+                    <div class="panel-heading">Recent entries</div>
                                 <!-- List group -->
                         <ul class="list-group">
                             <li class="list-group-item">
@@ -106,14 +106,18 @@
                                     <div class="col-xs-3 col-sm-2">
                                         <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=50%C3%9750&w=50&h=50" alt="">
                                     </div>
-                                    <div class="col-xs-9 col-sm-10">
-                                        <p>Пост №1</p>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <p>Post №1</p>
+                                    </div>
+                                    <div class="col-xs-1 col-sm-1">
+                                        <button title="Delete" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 30px;">
                                         <img src="http://placehold.it/600x600" class="img-responsive" alt="">
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 20px;">
-                                        <div class="btn btn-default pull-right">+1</div>
+                                      <!--  <div class="btn btn-default pull-right">+1</div> -->
+                                        <button class="btn btn-default pull-right"><span class="murrk">D</span> +1 murrk</button>
                                     </div>
                                 </div>
                             </li>
@@ -122,14 +126,18 @@
                                     <div class="col-xs-3 col-sm-2">
                                         <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=50%C3%9750&w=50&h=50" alt="">
                                     </div>
-                                    <div class="col-xs-9 col-sm-10">
-                                        <p>Пост №2</p>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <p>Post №2</p>
+                                    </div>
+                                    <div class="col-xs-1 col-sm-1">
+                                        <button title="Delete" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 30px;">
                                         <img src="http://placehold.it/600x600" class="img-responsive" alt="">
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 20px;">
-                                        <div class="btn btn-default pull-right">+1</div>
+                                        <!-- <div class="btn btn-default pull-right">+1</div> -->
+                                        <button class="btn btn-default pull-right"><span class="murrk">D</span> +1 murrk</button>
                                     </div>
                                 </div>
                             </li>
@@ -138,14 +146,18 @@
                                     <div class="col-xs-3 col-sm-2">
                                        <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=50%C3%9750&w=50&h=50" alt="">
                                     </div>
-                                    <div class="col-xs-9 col-sm-10">
-                                       <p>Пост №3</p>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <p>Post №3</p>
+                                    </div>
+                                    <div class="col-xs-1 col-sm-1">
+                                        <button title="Delete" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 30px;">
                                         <img src="http://placehold.it/600x600" class="img-responsive" alt="">
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 20px;">
-                                       <div class="btn btn-default pull-right">+1</div>
+                                      <!-- <div class="btn btn-default pull-right">+1</div> -->
+                                      <button class="btn btn-default pull-right"><span class="murrk">D</span> +1 murrk</button>
                                     </div>
                                 </div>
                             </li>
@@ -154,18 +166,25 @@
                                     <div class="col-xs-3 col-sm-2">
                                         <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=50%C3%9750&w=50&h=50" alt="">
                                     </div>
-                                    <div class="col-xs-9 col-sm-10">
-                                        <p>Пост №4</p>
+                                    <div class="col-xs-8 col-sm-9">
+                                        <p>Post №4</p>
+                                    </div>
+                                    <div class="col-xs-1 col-sm-1">
+                                        <button title="Delete" class="btn btn-default"><i class="fa fa-times" aria-hidden="true"></i></button>
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 30px;">
                                         <img src="http://placehold.it/600x600" class="img-responsive" alt="">
                                     </div>
                                     <div class="col-xs-12" style="padding-top: 20px;">
-                                        <div class="btn btn-default pull-right">+1</div>
+                                       <!-- <div class="btn btn-default pull-right">+1</div> -->
+                                        <button class="btn btn-default pull-right"><span class="murrk">D</span> +1 murrk</button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+                        <div style="padding: 10px 30px 10px 30px">
+                            <a href="#" class="btn btn-primary btn-block">View more</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,5 +197,6 @@
     <script src="js/jquery.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/bootstrap.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>

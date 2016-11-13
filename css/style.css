@@ -2,6 +2,10 @@
     font-family: CatsVsDogsLT; 
     src: url(../fonts/catsvsdogsLT.ttf); 
    }
+@font-face {
+    font-family:Animt;
+    src: url(../fonts/ANIMT___.TTF); 
+   }
 body{
   background:url('../img/background.png') repeat;
 }
@@ -34,6 +38,16 @@ color:#02151f;
 	font-size:250%;
 }
 
-.fa {
+li > a > .fa{
 	margin-right: 10px;
+}
+.w-100{
+	width:100%;
+}
+.page-header{
+	color:#07243e;
+	border-color:#5b5b5b;
+}
+.murrk{
+	font-family:Animt;
 }
