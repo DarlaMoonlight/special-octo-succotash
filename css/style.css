@@ -17,10 +17,10 @@ body{
 }
 
 .navbar-default{
-	background-color: rgba(214, 222, 226, 1);
+	background-color: #d6dee2;
 }
 .navbar-default .navbar-nav > .active > a{
-background-color: rgba(198, 224, 228, 1);
+background-color: rgba(198, 224, 228, 0.63);
 color:#02151f;
 
 }
@@ -50,4 +50,14 @@ li > a > .fa{
 }
 .murrk{
 	font-family:Animt;
+	color:blue;
+}
+.minPhoto{
+	border-radius: 40px;
+}
+.button > .btn-default, .col-xs-12 > .pull-right{
+	background-color: #d6dee2;
+}
+ .fontstyle-panel-header{
+	font:  170%  'Times New Roman',sans-serif ;
 }

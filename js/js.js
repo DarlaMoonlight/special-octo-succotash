@@ -31,7 +31,7 @@ $(function () {
             '<li class="list-group-item">\
                         <div class="row">\
                         <div class="col-xs-3 col-sm-2">\
-                        <img src="https://placeholdit.imgix.net/~text?txtsize=9&amp;txt=50%C3%9750&amp;w=50&amp;h=50" alt="">\
+                        <img class="minPhoto" src="https://placeholdit.imgix.net/~text?txtsize=9&amp;txt=70%C3%9770&amp;w=70&amp;h=70" alt="">\
                         </div>\
                         <div class="col-xs-8 col-sm-9">\
                         <p>Post</p>\
@@ -40,7 +40,8 @@ $(function () {
                         <button title="Delete" class="btn btn-default tmp_for_delete"><i class="fa fa-times" aria-hidden="true"></i></button>\
                         </div>\
                         <div class="col-xs-12" style="padding-top: 30px;">\
-                        <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt='+post_text+'&w=600&h=600" class="img-responsive" alt="">\
+								<p>'+post_text+'</p>\
+                        <img src="https://placeholdit.imgix.net/~text?txtsize=56&txt=&w=600&h=600" class="img-responsive" alt="">\
             </div>\
             <div class="col-xs-12" style="padding-top: 20px;">\
             <!--  <div class="btn btn-default pull-right">+1</div> -->\
