@@ -61,3 +61,6 @@ li > a > .fa{
  .fontstyle-panel-header{
 	font:  170%  'Times New Roman',sans-serif ;
 }
+.img-responsive{
+	margin: 0 auto;
+}
